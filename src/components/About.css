@@ -1,0 +1,26 @@
+/* About.css */
+.container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    overflow: auto;
+  }
+  
+  .debarshiImage {
+    width: 300px;
+    height: 400px;
+    border-radius: 10%;
+  }
+  .varsityImage {
+    width: 500px;
+    height: 400px;
+    border-radius: 10%;
+  }
+  
+  .textBox {
+    margin-left: 20px;
+    font-size: 20px;
+    overflow-wrap: break-word;
+  }
+  
