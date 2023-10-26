@@ -2,7 +2,6 @@ import { HStack, Image, useColorMode } from "@chakra-ui/react";
 import logo from "../assets/logo.png";
 import ColorModeSwitch from "./ColorModeSwitch";
 import TaskButton from "./TaskButton";
-import "./NavBar.css";
 
 interface props {
   handleClick: (newState: string) => void;
@@ -17,6 +16,7 @@ const NavBar = ({ handleClick }: props) => {
       justifyContent="space-between"
       top="0"
       backgroundColor={colorMode === "dark" ? "black" : "aliceblue"}
+      opacity={0.9}
     >
       <Image src={logo} boxSize="60px" />
       <div>

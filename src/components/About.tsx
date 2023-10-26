@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import debarshi from "./Pictures/debarshi.jpg";
 import varsity from "./Pictures/Varsity.jpg";
+import violin from "./Pictures/violin.jpg.jpg";
 import "./About.css"; // Import the CSS file
 import TypingText from "./TypingText";
 import { useEffect } from "react";
@@ -45,6 +46,18 @@ const About = () => {
         </div>
         <img src={varsity} alt="debarshi" className="varsityImage"></img>
       </div>
+      <div className="container" style={{ marginBottom: "200px" }}>
+        <img src={violin} alt="debarshi" className="violinImage"></img>
+        <div id="text-container" className="textBox" style={{ width: "500px" }}>
+          <TypingText
+            text="I love playing the violin, and have been playing since kindergarten. 
+            While classical music is fun in an orchestra, playing random songs on the radio or 
+            from different animes are my favorite!"
+            delay={50}
+          ></TypingText>
+        </div>
+      </div>
+      <></>
     </div>
   );
 };

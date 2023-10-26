@@ -6,6 +6,7 @@ import Experiences from "./components/Experiences";
 import Upto from "./components/Upto";
 import Contact from "./components/Contact";
 import Sticky from "react-stickynode";
+import BottomHeader from "./components/BottomHeader";
 
 function App() {
   const [pageState, setPageState] = useState<String>("Home");
@@ -50,6 +51,7 @@ function App() {
         </Sticky>
       </GridItem>
       <GridItem area="main">{content}</GridItem>
+      <BottomHeader className="bottom-header"></BottomHeader>
     </Grid>
   );
 }
