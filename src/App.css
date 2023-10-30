@@ -42,4 +42,5 @@
 }
 .bottom-header {
   margin-top: auto;
+  bottom: 0;
 }

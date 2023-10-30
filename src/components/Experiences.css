@@ -1,0 +1,46 @@
+.image-style {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    margin-left: 15px;
+}
+.mongo-image-style {
+    width: 200px;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    margin-left: 350px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    overflow: auto;
+  }
+  .textBox {
+    margin-left: 100px;
+    font-size: 20px;
+    overflow-wrap: break-word;
+  }
+  .experience-image-style {
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+    border-radius: 10%
+  }
+  .experience-header {
+    margin-top: 0px;
+    margin-left: 120px;
+    font-weight: bold;
+    font-size: larger;
+  }
+  .experience-list {
+    margin-top: 30px;
+  }
+  .headshot-image-style {
+    width: 270px;
+    height: 180px;
+    margin-left: 30px;
+    border-radius: 10%
+  }

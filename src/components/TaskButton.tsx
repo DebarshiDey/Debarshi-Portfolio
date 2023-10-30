@@ -1,18 +1,20 @@
 import React from "react";
-import { Button, ButtonGroup } from "@chakra-ui/react";
-interface props {
+import { Button } from "@chakra-ui/react";
+
+interface Props {
   name: string;
   onClick: (name: string) => void;
+  size?: string;
 }
 
-const TaskButton = ({ name, onClick }: props) => {
+const TaskButton: React.FC<Props> = ({ name, onClick, size }) => {
   const handleClick = () => {
     onClick(name);
   };
 
   const buttonStyle = {
-    fontSize: "20px",
-    margin: "20px",
+    fontSize: size,
+    margin: size,
   };
 
   return (
@@ -20,6 +22,10 @@ const TaskButton = ({ name, onClick }: props) => {
       {name}
     </Button>
   );
+};
+
+TaskButton.defaultProps = {
+  size: "20px",
 };
 
 export default TaskButton;
