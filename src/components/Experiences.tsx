@@ -26,6 +26,7 @@ import AVB from "./Pictures/AVB.png";
 import bitcamp from "./Pictures/Bitcamp.png";
 import { useColorMode } from "@chakra-ui/react";
 import professional from "./Pictures/professional.jpg";
+import incident from "./Pictures/incident.jpg";
 
 const Experiences = () => {
   const [experience1, setExperience1] = useState(false);
@@ -49,22 +50,32 @@ const Experiences = () => {
         className="container"
         style={{ marginTop: "50px", marginBottom: "40px" }}
       >
-        <img src={umd} alt="UMD" className="experience-image-style" />
+        <img src={incident} alt="Incident" className="incident-image-style" />
         <div id="text-container" className="textBox" style={{ width: "500px" }}>
-          <ul>
+          <ul style={{ marginLeft: "0px" }}>
             <li style={{ marginBottom: "20px" }}>
               Spearheaded a hackathon-winning project using{" "}
               <strong>Folium</strong> for geospatial visualization,{" "}
               <strong>BeautifulSoup</strong> and <strong>Geopandas</strong> to
               scrape and visualize criminal data. Transformed{" "}
               <strong>100+</strong> entries through automated{" "}
-              <strong>Google Maps API</strong>
+              <strong>Google Maps API </strong>
               calls
             </li>
-            <li>
+            <li style={{ marginBottom: "20px" }}>
               Developed a <strong>React.js</strong> based front-end, utilizing
               <strong>Figma</strong> and <strong>HTML/CSS</strong> for
               web-design, and hosted through AWS S3 for cost-effiency
+            </li>
+            <li>
+              <strong>Link: </strong>{" "}
+              <a
+                className="link"
+                target="_blank"
+                href="https://github.com/DebarshiDey/DebarshiDey.github.io"
+              >
+                Click Me!
+              </a>
             </li>
           </ul>
         </div>
@@ -77,16 +88,30 @@ const Experiences = () => {
         style={{ marginTop: "50px", marginBottom: "40px" }}
       >
         <img src={professional} alt="UMD" className="headshot-image-style" />
-        <div id="text-container" className="textBox" style={{ width: "500px" }}>
+        <div
+          id="text-container"
+          className="textBox"
+          style={{ width: "500px", display: "flex" }}
+        >
           <ul>
             <li style={{ marginBottom: "20px" }}>
               The Project that you are viewing right now! This project utilizes{" "}
               <strong>TypeScript</strong>, <strong>React</strong>, and HTML/CSS.
             </li>
-            <li>
+            <li style={{ marginBottom: "20px" }}>
               Utilized <strong>Figma</strong> for a mockup design, and a
               backend-api using <strong>flask</strong> for a postgreSQL querying
               system
+            </li>
+            <li>
+              <strong>Link: </strong>{" "}
+              <a
+                className="link"
+                href="https://github.com/DebarshiDey/Debarshi-Portfolio/tree/master"
+                target="_blank"
+              >
+                Click Me!
+              </a>
             </li>
           </ul>
         </div>
@@ -97,10 +122,16 @@ const Experiences = () => {
   const experienceToggle = (experienceNumber: number) => {
     if (experienceNumber == 1) {
       setExperience1(!experience1);
+      setExperience2(false);
+      setExperience3(false);
     } else if (experienceNumber == 2) {
       setExperience2(!experience2);
+      setExperience1(false);
+      setExperience3(false);
     } else if (experienceNumber == 3) {
       setExperience3(!experience3);
+      setExperience1(false);
+      setExperience2(false);
     }
   };
   const { colorMode } = useColorMode();
@@ -301,7 +332,7 @@ const Experiences = () => {
           <div
             id="text-container"
             className="textBox"
-            style={{ width: "500px" }}
+            style={{ width: "500px", zIndex: "revert-layer" }}
           >
             <TaskButton
               name="Software Development Intern"
@@ -350,11 +381,11 @@ const Experiences = () => {
         className="container"
         style={{
           backgroundColor: background,
-          width: "960px",
+          width: "1200px",
           padding: "20px",
           borderRadius: "10px",
-          marginLeft: "60px",
-          marginBottom: "1000px",
+          marginLeft: "-70px",
+          marginBottom: "300px",
         }}
       >
         {" "}
@@ -362,7 +393,7 @@ const Experiences = () => {
           style={{
             display: "flex",
             justifyContent: "center",
-            marginLeft: "165px",
+            marginLeft: "300px",
           }}
         >
           <TaskButton

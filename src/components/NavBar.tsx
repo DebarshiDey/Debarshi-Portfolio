@@ -17,6 +17,7 @@ const NavBar = ({ handleClick }: props) => {
       top="0"
       backgroundColor={colorMode === "dark" ? "black" : "aliceblue"}
       opacity={0.9}
+      zIndex={100}
     >
       <Image src={logo} boxSize="60px" />
       <div>
